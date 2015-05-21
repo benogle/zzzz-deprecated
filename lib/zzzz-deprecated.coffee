@@ -6,11 +6,11 @@ module.exports = ZzzzDeprecated =
   modalPanel: null
   subscriptions: null
 
-  configDefaults:
-    cats: 'ok'
+  # configDefaults:
+  #   cats: 'ok'
 
   activate: (state) ->
-    atom.workspace.getActiveEditor()
+    # atom.workspace.getActiveEditor()
     @zzzzDeprecatedView = new ZzzzDeprecatedView(state.zzzzDeprecatedViewState)
     @modalPanel = atom.workspace.addModalPanel(item: @zzzzDeprecatedView.getElement(), visible: false)
 
