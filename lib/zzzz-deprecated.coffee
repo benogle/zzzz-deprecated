@@ -10,7 +10,7 @@ module.exports = ZzzzDeprecated =
   #   cats: 'ok'
 
   activate: (state) ->
-    {$$} = require 'atom'
+    {$$, View} = require 'atom'
     # atom.workspace.getActiveEditor()
     @zzzzDeprecatedView = new ZzzzDeprecatedView(state.zzzzDeprecatedViewState)
     @modalPanel = atom.workspace.addModalPanel(item: @zzzzDeprecatedView.getElement(), visible: false)
