@@ -1,5 +1,5 @@
 ZzzzDeprecatedView = require './zzzz-deprecated-view'
-{CompositeDisposable} = require 'atom'
+{$, $$, $$$, CompositeDisposable} = require 'atom'
 
 module.exports = ZzzzDeprecated =
   zzzzDeprecatedView: null
